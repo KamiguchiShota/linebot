@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', 'LineBotController@index');
+
+//Route::post('/parrot', 'LineBotController@parrot');

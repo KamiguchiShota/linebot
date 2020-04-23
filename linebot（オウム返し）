@@ -1,0 +1,33 @@
+①公式ラインでユーザーが送信
+②公式ラインが、自分で作っているlaravelアプリにpostリクエストを送る。
+③laravelで受け取ったpostを公式ラインへそのまま返す。
+④公式ラインからユーザーへ返す。
+
+
+※アクセストークン設定
+・LaravelがLINEのチャネルと通信するためには、Laravelにアクセストークン等の設定を行う必要がある。
+
+※ルーティングの編集
+・ルーティングを編集し、LINEのチャネルからのPOSTリクエストを受け付けるためのURLを、Laravelに定義します。
+
+※開発環境のLaravelを一時的に外部から通信できるようにする
+・開発環境のLaravelを一時的に外部から通信できるようにするために、ngrokというツールをインストールします。また、そのツールを使って生成したLaravel接続用のURLを、LINEのチャネルに設定します。
+
+※オウム返し機能を作る(コントローラーの編集)
+・コントローラーを編集し、オウム返し機能を作りますgit
+
+
+
+docker起動？
+$ docker-compose down
+$ docker-compose up -d workspace php-fpm nginx
+
+ ngrokを起動する
+ ngrok http 56789
+
+
+
+https://shirusu-ni-tarazu.hatenablog.jp/entry/2013/01/18/034233
+
+
+$gurunavi = new App\Services\Gurunavi();
